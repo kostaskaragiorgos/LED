@@ -55,13 +55,13 @@ class LedControlPannel():
     def turnon(self):
         pac = self.ser.readline()
         if (pac.decode('utf').rstrip('\n') == "1"):
-            print("The led is already on!!!")
+            msg.showerror("ERROR","The led is already on!!!")
         self.ser.write(b'H')
 
     def turnoff(self):
         pac = self.ser.readline()
         if (pac.decode('utf').rstrip('\n') == "0"):
-            print("The led is already off!!!")
+            msg.showerror("ERROR","The led is already off!!!")
         self.ser.write(b'L')
 
     
