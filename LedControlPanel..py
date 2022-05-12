@@ -24,11 +24,11 @@ class LedControlPannel():
 
        
 
-        self.findbutton = Button(self.master, text="LED ON", command=self.turnon)
-        self.findbutton.pack()
+        self.turnonbutton = Button(self.master, text="LED ON", command=self.turnon)
+        self.turnonbutton.pack()
 
-        self.clearbutton = Button(self.master, text="LED OFF", command=self.turnoff)
-        self.clearbutton.pack()
+        self.turnoffbutton = Button(self.master, text="LED OFF", command=self.turnoff)
+        self.turnoffbutton.pack()
 
         self.menu = Menu(self.master)
 
